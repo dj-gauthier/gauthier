@@ -61,17 +61,27 @@
 
     /* Banner Container with Image & Overlay Text */
     .hero-banner {
-      position: relative;
-      width: 100%;
-      height: 380px;
-      background-color: #222222; /* Fallback color */
-      overflow: hidden;
+      /* position: relative; */
+      /* width: 100%; */
+      /* height: 380px; */
+      /* background-color: #222222; */ /* Fallback color */
+      /* overflow: hidden; */
+      /* Flexbox makes aligning the text overlay easy */
+      display: flex;
+      justify-content: center; /* Horizontally centers the text (Daniel Gauthier) */
+      align-items: center;     /* Vertically centers the text */
     }
     .banner-img {
-      width: 100%;
+      /* width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
+      display: block; */
+      width: 100%;
+      height: 75%;
+      object-fit: cover; /* ESSENTIAL: Fills the container, cropping extra parts */
+      
+      /* THIS IS YOUR "ANCHOR" SETTING */
+      object-position: center top center; /* Default (50% 50%) */
     }
     .banner-overlay {
       position: absolute;
