@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Gauthier - Scientific Research</title>
+  <style>
+    /* Global Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      background-color: #ffffff;
+    }
+
+    /* Top Navigation Bar */
+    header {
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .site-title {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav a {
+      color: #cccccc;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    nav a:hover,
+    nav a.active {
+      color: #ffffff;
+    }
+
+    /* Hero Banner Section */
+    .hero-banner {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .hero-banner h1 {
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: #5f6368;
+    }
+
+    /* Main Container with Sidebar for Badges */
+    .content-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 40px;
+    }
+
+    /* Left Side Content */
+    .main-text p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      color: #333333;
+    }
+    .main-text a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .main-text a:hover {
+      text-decoration: underline;
+    }
+    .main-text ul {
+      list-style-type: disc;
+      margin-left: 24px;
+      margin-bottom: 30px;
+    }
+    .main-text li {
+      margin-bottom: 8px;
+    }
+
+    /* Right Side Badges */
+    .sidebar-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .sidebar-badges img {
+      max-width: 160px;
+      height: auto;
+    }
+
+    /* PDF Embed Container */
+    .pdf-section {
+      max-width: 1000px;
+      margin: 0 auto 60px auto;
+      padding: 0 20px;
+    }
+    .pdf-embed {
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Responsive layout adjustment for smaller screens */
+    @media (max-width: 768px) {
+      .content-container {
+        grid-template-columns: 1fr;
+      }
+      .sidebar-badges {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpg" alt="Logo" class="brand-logo" />
+      <span class="site-title">Daniel Gauthier</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scientific-research.html" class="active">scientific research</a></li>
+        <li><a href="work-photos.html">work photos</a></li>
+        <li><a href="growing-up.html">growing up</a></li>
+        <li><a href="fun-photos.html">fun photos</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Title Banner -->
+  <section class="hero-banner">
+    <h1>scientific research</h1>
+  </section>
+
+  <!-- Main Content & Badges Layout -->
+  <div class="content-container">
+    <!-- Main Text Section -->
+    <main class="main-text">
+      <p>
+        As an academic, I publish scientific articles that you can find by following the links below. 
+        I am currently Deputy Editor of <a href="https://opg.optica.org/optica/home.cfm" target="_blank">Optica</a>, 
+        a new online journal focused on the top research in the broad discipline of optics.
+      </p>
+
+      <p>
+        Based on my past research, I have been named a Fellow of the 
+        <a href="https://www.aps.org" target="_blank">American Physical Society</a> and the 
+        <a href="https://www.optica.org" target="_blank">Optical Society of America</a>. 
+        To see a list of academic positions, service activities in the community, funding, and presentations, 
+        please see my <em>curriculum vitae</em>.
+      </p>
+
+      <ul>
+        <li>Curriculum vitae (see below)</li>
+        <li><a href="#">Academic lineage</a> (make sure you go back several levels)</li>
+        <li><a href="https://orcid.org" target="_blank">ORCID page</a></li>
+        <li><a href="#" target="_blank">Web of Science ResearcherID</a></li>
+        <li><a href="https://scholar.google.com" target="_blank">Google Scholar Researcher ID</a></li>
+        <li><a href="#">The web site for my Ohio State research group</a></li>
+        <li><a href="#">Official university web site</a></li>
+        <li><a href="#">All of my recent publications, most with links to the papers</a></li>
+      </ul>
+    </main>
+
+    <!-- Right Side Badges -->
+    <aside class="sidebar-badges">
+      <img src="images/aps-fellow.png" alt="APS Fellow Badge" />
+      <img src="images/optica-fellow.png" alt="Optica Fellow Badge" />
+    </aside>
+  </div>
+
+  <!-- PDF Viewer Section -->
+  <section class="pdf-section">
+    <iframe src="assets/cv.pdf" class="pdf-embed" title="Curriculum Vitae"></iframe>
+  </section>
+
+</body>
+</html>
